@@ -1,0 +1,317 @@
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: fjdxym-3000.csb.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: fjdxym-3000.csb.app
+Started GET "/favicon.ico" for 10.42.2.0 at 2025-07-16 02:01:30 +0000
+Cannot render console from 10.42.2.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='LoginSystemApp'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 10.42.2.0 at 2025-07-16 02:01:32 +0000
+Cannot render console from 10.42.2.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 9.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/login-f2f81d6e.css" for 10.42.1.0 at 2025-07-16 02:01:32 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-bfcdf840.js" for 10.42.1.0 at 2025-07-16 02:01:32 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-8b441ae0.css" for 10.42.0.0 at 2025-07-16 02:01:32 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 10.42.0.0 at 2025-07-16 02:01:32 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/index-ee64e1f1.js" for 10.42.0.0 at 2025-07-16 02:01:32 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 10.42.2.0 at 2025-07-16 02:01:33 +0000
+Cannot render console from 10.42.2.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus.min-4b1e420e.js" for 10.42.0.0 at 2025-07-16 02:01:33 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/turbo.min-3a2e143f.js" for 10.42.1.0 at 2025-07-16 02:01:33 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 10.42.1.0 at 2025-07-16 02:01:33 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started POST "/login" for 10.42.0.0 at 2025-07-16 02:01:45 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '12341@email.bolt' LIMIT 1 /*action='create',application='LoginSystemApp',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 28ms (Views: 1.2ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/signup" for 10.42.0.0 at 2025-07-16 02:01:49 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.3ms)
+Completed 200 OK in 15ms (Views: 4.2ms | ActiveRecord: 0.3ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started POST "/signup" for 10.42.0.0 at 2025-07-16 02:01:59 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = '12341@email.bolt' LIMIT 1 /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ('12341@email.bolt', '$2a$12$YlYLf0fiEoCQK5a7k3YlI.5J53.mJ8l5iJUMKJ1en7Tm.5QB.GMP.', '2025-07-16 02:01:59.841890', '2025-07-16 02:01:59.841890') RETURNING "id" /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to https://fjdxym-3000.csb.app/
+Completed 302 Found in 211ms (ActiveRecord: 6.9ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/" for 10.42.1.0 at 2025-07-16 02:02:00 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/login" for 10.42.0.0 at 2025-07-16 02:02:05 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '12341@email.bolt' LIMIT 1 /*action='create',application='LoginSystemApp',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to https://fjdxym-3000.csb.app/
+Completed 302 Found in 200ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 10.42.1.0 at 2025-07-16 02:02:06 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/login" for 10.42.0.0 at 2025-07-16 02:09:06 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '12341@email.bolt' LIMIT 1 /*action='create',application='LoginSystemApp',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 258ms (Views: 17.2ms | ActiveRecord: 5.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/signup" for 10.42.2.0 at 2025-07-16 02:09:08 +0000
+Cannot render console from 10.42.2.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/signup" for 10.42.2.0 at 2025-07-16 02:09:18 +0000
+Cannot render console from 10.42.2.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = '12341@email.bolt' LIMIT 1 /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.5ms | GC: 1.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | GC: 1.9ms)
+Completed 422 Unprocessable Content in 218ms (Views: 5.5ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 3.3ms)
+
+
+Started GET "/login" for 10.42.0.0 at 2025-07-16 02:09:24 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Started POST "/login" for 10.42.1.0 at 2025-07-16 02:09:31 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '12341@email.bolt' LIMIT 1 /*action='create',application='LoginSystemApp',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to https://fjdxym-3000.csb.app/
+Completed 302 Found in 201ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 10.42.1.0 at 2025-07-16 02:09:32 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/login" for 10.42.2.0 at 2025-07-16 02:09:47 +0000
+Cannot render console from 10.42.2.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '434@gmail.com' LIMIT 1 /*action='create',application='LoginSystemApp',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 19.9ms | GC: 6.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | GC: 6.7ms)
+Completed 422 Unprocessable Content in 84ms (Views: 31.8ms | ActiveRecord: 4.4ms (1 query, 0 cached) | GC: 6.7ms)
+
+
+Started POST "/login" for 10.42.1.0 at 2025-07-16 02:09:54 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '12341@email.bolt' LIMIT 1 /*action='create',application='LoginSystemApp',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to https://fjdxym-3000.csb.app/
+Completed 302 Found in 212ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/" for 10.42.1.0 at 2025-07-16 02:09:55 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.5ms)
+
+
+Started GET "/" for 10.42.0.0 at 2025-07-16 02:11:41 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 10.42.1.0 at 2025-07-16 02:12:22 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 10.42.0.0 at 2025-07-16 02:12:29 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/login" for 10.42.1.0 at 2025-07-16 02:12:53 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'gmail@gmail' LIMIT 1 /*action='create',application='LoginSystemApp',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 8ms (Views: 1.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/signup" for 10.42.0.0 at 2025-07-16 02:12:56 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/signup" for 10.42.2.0 at 2025-07-16 02:13:02 +0000
+Cannot render console from 10.42.2.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'gmail@gmail' LIMIT 1 /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ('gmail@gmail', '$2a$12$.jijbh5Wi9ZtB3mz6krHx.GsJtmfgfjI8Jm/nD59rxcUhCInxqXPu', '2025-07-16 02:13:03.206046', '2025-07-16 02:13:03.206046') RETURNING "id" /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='LoginSystemApp',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to https://fjdxym-3000.csb.app/
+Completed 302 Found in 216ms (ActiveRecord: 5.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 10.42.0.0 at 2025-07-16 02:13:03 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/login" for 10.42.2.0 at 2025-07-16 02:13:08 +0000
+Cannot render console from 10.42.2.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'gmail@gmail' LIMIT 1 /*action='create',application='LoginSystemApp',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to https://fjdxym-3000.csb.app/
+Completed 302 Found in 207ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 10.42.0.0 at 2025-07-16 02:13:09 +0000
+Cannot render console from 10.42.0.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 10.42.1.0 at 2025-07-16 02:21:05 +0000
+Cannot render console from 10.42.1.0! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 20.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | GC: 0.0ms)
+Completed 200 OK in 64ms (Views: 31.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 15.9ms)
+
+
